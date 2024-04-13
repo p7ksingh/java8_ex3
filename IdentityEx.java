@@ -15,6 +15,6 @@ public class IdentityEx {
         List<String> wordList = Arrays.asList("Pankaj", "Dhiraj", "Niraj", "Niraj", "Alam", "Dhiraj");
         Map<String, Long> collect = wordList.stream()
                 .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
-        System.out.println(collect);
+        System.out.println(collect);// it print count
     }
 }
